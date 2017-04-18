@@ -150,6 +150,7 @@ location ~ /#!# WP_CONTENT_URI #!#/cache/wp-rocket/.*html$ {
 	# https://www.owasp.org/index.php/List_of_useful_HTTP_headers
 	add_header X-XSS-Protection "1; mode=block";
 	}
+
 }
 
 # Do not gzip cached files that are already gzipped
@@ -190,6 +191,7 @@ location ~ /#!# WP_CONTENT_URI #!#/cache/wp-rocket/.*_gzip$ {
 	# https://www.owasp.org/index.php/List_of_useful_HTTP_headers
 	add_header X-XSS-Protection "1; mode=block";
 	}
+
 }
 
 # Debug header (when file is not cached)
